@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="26dp"
+    android:background="@android:color/black"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:text="EasyShop"
+        android:gravity="center"
+        android:textColor="@color/neon_green"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_margin="5dp"
+        android:text="Sign up to get started"
+        android:gravity="center"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:hint="Username"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:hint="Email"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/edt_user_password"
+        android:hint="Password"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/edt_confirm_password"
+        android:hint="Confirm Password"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:backgroundTint="@color/neon_green_dark"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:text="Sign Up"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:id="@+id/login_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Log In"
+            android:textColor="@color/neon_green"
+            android:textSize="22sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/easyshop" />
+    </LinearLayout>
+
+</LinearLayout>

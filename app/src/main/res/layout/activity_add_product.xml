@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="EasyShop"
+            android:gravity="center"
+            android:textColor="@color/neon_green"/>
+
+        <TextView
+            android:id="@+id/txt_add_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_margin="5dp"
+            android:text="Add New Product"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <!-- Upload Image -->
+        <ImageView
+            android:id="@+id/img_upload"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/noimage"
+            android:scaleType="centerCrop"
+            android:contentDescription="Upload Product Image"
+            android:layout_margin="20dp" />
+
+        <!-- Product Name -->
+        <EditText
+            android:id="@+id/edt_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="Product Name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <!-- Available Units -->
+        <EditText
+            android:id="@+id/edt_units"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="Available Units"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <!-- Price -->
+        <EditText
+            android:id="@+id/edt_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <!-- Add Product Button -->
+        <Button
+            android:id="@+id/btn_add_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Product"
+            android:backgroundTint="@color/neon_green_dark"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

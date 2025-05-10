@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EasyShop</string>
+    <string name="update_product">Update Product</string>
+    <string name="add_product">Add Product</string>
+</resources>
